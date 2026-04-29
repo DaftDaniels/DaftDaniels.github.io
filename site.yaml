@@ -1,0 +1,91 @@
+# ═══════════════════════════════════════════════════════════════
+#  Vellum — Configuração do Site
+#  Edite este arquivo para personalizar seu site de portfólio.
+#  Todos os campos têm valores padrão — altere apenas o necessário.
+# ═══════════════════════════════════════════════════════════════
+
+
+# ─── Identidade do Site ────────────────────────────────────────────
+# Nome mostrado na barra de navegação, títulos de página e aba do navegador.
+site:
+  name: "Meu Portfólio"
+  description: "Portfólio pessoal e galeria de trabalhos artísticos"
+  url: ""           # URL do seu site (ex: "https://meusite.com")
+  lang: "pt-BR"     # Idioma HTML: "en", "pt-BR", "es", "fr", etc.
+  logo_icon: "/images/eye.gif"    # Logo da barra de navegação: texto ("V"), imagem ("/images/logo.png") ou GIF ("/images/logo.gif")
+  favicon: ""       # Caminho para o favicon (ex: "/images/favicon.png")
+  og_image: ""      # Imagem padrão para compartilhamento social (ex: "/images/og-cover.jpg")
+
+
+# ─── Labels da Navegação ──────────────────────────────────────
+# Personalize os rótulos mostrados na barra de navegação.
+nav:
+  home: "Início"
+  home_icon: "fas fa-home"             # Classe de ícone do Font Awesome
+  projects: "Projetos"
+  projects_icon: "fas fa-palette"      # ex: fas fa-code, fas fa-briefcase
+  resume: "Currículo"
+  resume_icon: "fas fa-user"           # ex: fas fa-file-alt, fas fa-id-card
+  blog: "Blog"
+  blog_icon: "fas fa-pen-nib"          # ex: fas fa-blog, fas fa-newspaper
+  pricing: "Comissões"
+  pricing_icon: "fas fa-tags"          # ex: fas fa-dollar-sign, fas fa-shopping-cart
+  gallery: "Galeria"
+  gallery_icon: "fas fa-images"        # ex: fas fa-camera, fas fa-photo-video
+
+
+# ─── Seção Hero (Página Inicial) ────────────────────────────
+# A grande seção hero que os visitantes veem primeiro na sua página inicial.
+hero:
+  tagline: "Criando universos visuais, um traço de cada vez"
+  cta_primary:
+    text: "Ver Projetos"
+    url: "/projects/"
+    icon: "fas fa-paint-brush"        # Classe de ícone do Font Awesome
+  cta_secondary:
+    text: "Entre em Contato"
+    url: "mailto:seu@email.com"
+    icon: "fas fa-envelope"           # Classe de ícone do Font Awesome
+
+
+# ─── Títulos das Seções ─────────────────────────────────────────
+# Personalize o texto do título mostrado em cada seção da página inicial.
+# Deixe em branco para usar os valores padrão.
+section_titles:
+  featured_projects: "Projetos em Destaque"
+  skills: "Habilidades & Técnicas"
+  latest_posts: "Últimos Posts do Blog"
+  about: "Sobre a Artista"
+
+
+# ─── Rodapé ─────────────────────────────────────────────────
+# Personalize o conteúdo do rodapé.
+footer:
+  text: ""                       # Texto personalizado do rodapé (deixe em branco para o padrão)
+  show_social: true              # Mostrar links sociais no rodapé
+  extra_links:                   # Links extras no rodapé (opcional)
+    # - text: "Política de Privacidade"
+    #   url: "/privacidade/"
+    # - text: "Termos de Uso"
+    #   url: "/termos/"
+
+
+# ─── Ativação de Recursos ────────────────────────────────────────
+# Ative ou desative seções inteiras do site.
+# Defina como false para ocultar uma seção completamente.
+features:
+  blog: true                  # Ativa a seção de blog
+  resume: true                # Ativa a página de currículo
+  pricing: true            # Ativa a página de comissões/preços
+  gallery: true            # Ativa a página de galeria de imagens
+
+
+# ─── Configurações de Build ─────────────────────────────────────────
+# Configurações técnicas para o processo de build.
+settings:
+  highlight_theme: "dracula"         # Tema de destaque de sintaxe para blocos de código
+  date_format: "02/01/2006"           # Formato de exibição de data
+  projects_per_page: 6               # Projetos por página
+  posts_per_page: 6                  # Posts do blog por página
+  images_per_page: 6                 # Imagens da galeria por página
+  port: 8080                         # Porta do servidor local (vellum build -host)
